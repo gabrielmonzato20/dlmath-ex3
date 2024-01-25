@@ -80,7 +80,7 @@ def test_fit_and_predict_regression_model_1d():
     test= (y_pred - torch.tensor([[1252.3008],
                                     [939.9971],
                                     [627.6935]])).abs()
-    print("tEST",test)
+
     assert ((y_pred - torch.tensor([[1252.3008],
                                     [939.9971],
                                     [627.6935]])).abs() < 2).all(), " y_pred is not correct"
@@ -95,7 +95,7 @@ def test_fit_and_predict_regression_model_2d():
     test=(y_pred - torch.tensor([[1191.9037],
                                     [943.9369],
                                     [695.9700]])).abs()
-    print("tEST",test)
+
     assert ((y_pred - torch.tensor([[1191.9037],
                                     [943.9369],
                                     [695.9700]])).abs() < 2).all(), " y_pred is not correct"
